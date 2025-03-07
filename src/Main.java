@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in); // Scanner agora é estático
-    static int escolha; // Tornando a variável escolha estática
-    // Array de Itens para guardar os itens disponíveis no jogo
+    // Declare static variables at the class level
+    static Scanner scanner = new Scanner(System.in);
+    static int escolha;
     static Itens[] itens = new Itens[10];
-    static Itens itemSelecionado = null; // Variável itemSelecionado declarada como estática
+    static Itens itemSelecionado = null;
 
     public static void main(String[] args) {
         // Inicializando o array de itens
-        itens[0] = new Armas(0, "Espada de Ferro", "Espada", 5, 10, 0, 5, 15);
-        itens[1] = new Armas(1, "Varinha Mágica", "Varinha", 12, 5, 15, 3, 20);
+        itens[0] = new Armas(0, "Espada de Ferro", "Espada", 15, 5.0f, 0.0f, 10.0f, 20);
+        itens[1] = new Armas(1, "Varinha Mágica", "Varinha", 20, 2.0f, 15.0f, 5.0f, 10);
 
         // Menu para o usuário escolher o que deseja fazer
         do {
